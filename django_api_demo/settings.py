@@ -24,7 +24,8 @@ SECRET_KEY = 'django-insecure-8ybtrd3v75w818_e(vdff(kjir@9iy!_mfoppi7_2gac05&jky
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+#负载均衡需要配置此处，myserver为nginx配置中的server名称
+ALLOWED_HOSTS = ["myserver"]
 
 
 # Application definition
